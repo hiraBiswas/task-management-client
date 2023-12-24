@@ -11,6 +11,9 @@ import PrivateRoute from '../Routes/PrivateRoute'
 import Dashboard from '../Layout/Dashboard'
 import AddTask from "../Pages/Dashboard/AddTask/AddTask";
 import ManageTask from "../Pages/Dashboard/ManageTask/ManageTask";
+import Process from "../Pages/Process/Process";
+import Guideline from "../Pages/GuideLine/Guideline";
+import User from "../Pages/Home/User/User";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -21,6 +24,21 @@ export const router = createBrowserRouter([
           path: '/',
           element: <Home></Home>
       }, 
+
+      {
+        path: '/process',
+        element: <Process></Process>
+    },
+
+    {
+      path: '/guideline',
+      element: <Guideline></Guideline>
+  },
+
+  {
+    path: '/users',
+    element: <User></User>
+},
      
       {
         path: '/login',

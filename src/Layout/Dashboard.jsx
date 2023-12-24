@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, NavLink, Outlet } from "react-router-dom";
-
+import { SiTask } from "react-icons/si";
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 
@@ -53,7 +53,7 @@ console.log(user)
             
               <>
               <li>
-                  <NavLink to="/dashboard/manageTask">Manage Task</NavLink>
+                  <NavLink to="/dashboard/manageTask"><SiTask />Manage Task</NavLink>
                 </li>
                 <li>
                   <NavLink to="/dashboard/addTask">Add Task</NavLink>
