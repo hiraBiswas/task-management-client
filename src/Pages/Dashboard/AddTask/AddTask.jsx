@@ -56,9 +56,9 @@ const AddTask = () => {
         }
     };    
       return (
-        <div className="mt-10 w-full lg:mt-12   rounded-2xl drop-shadow">
-          <h1 className="mx-auto p-10 text-amber-600 font-semibold text-center text-2xl lg:text-4xl">Add New Product</h1>
-          <form onSubmit={handleSubmit(handleAddTruck)} className="w-full px-10">
+        <div className="mt-10 max-w-4xl lg:mt-12   rounded-2xl drop-shadow">
+          <h1 className="mx-auto p-10 text-fuchsia-600 font-semibold text-center text-2xl lg:text-4xl">Add New Product</h1>
+          <form onSubmit={handleSubmit(handleAddTruck)} className="w-full ">
       
           <div className="form-control ">
             <label className="label">
@@ -70,11 +70,12 @@ const AddTask = () => {
               className="input input-bordered"
             />
           </div>
+
           <div className="form-control ">
   <label className="label">
     <span className="label-text text-fuchsia-500 font-bold text-xl">Priority</span>
   </label>
-  <select {...register('priority', { required: true })} className="select select-bordered w-full max-w-xs">
+  <select {...register('priority', { required: true })} className="select select-bordered w-full ">
     <option disabled selected value="">
       Select an option
     </option>
@@ -85,7 +86,7 @@ const AddTask = () => {
 </div>
 
 
-<div className="form-control w-full">
+<div className="form-control">
   <label className="label">
     <span className="label-text text-fuchsia-500 font-bold text-xl">Deadline</span>
   </label>
@@ -93,7 +94,7 @@ const AddTask = () => {
     selected={deadline}
     onChange={(date) => setDeadline(date)}
     minDate={new Date()} // Set minDate to prevent selecting past dates
-    className="input input-bordered"
+    className="input input-bordered w-full"
   />
 </div>
 
@@ -111,7 +112,7 @@ const AddTask = () => {
         {/* ... (rest of the form controls) ... */}
 
         <div className="form-control mt-6">
-          <button className="btn bg-amber-600 drop-shadow">Add Product</button>
+          <button className="btn bg-fuchsia-600 drop-shadow">Add Product</button>
         </div>
       </form>
                  

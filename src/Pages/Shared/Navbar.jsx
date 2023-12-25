@@ -40,17 +40,17 @@ const handleSignOut=()=>{
 }
     return (
        
-        <div className='relative'
-        style={{
-          backgroundImage: "url('https://i.ibb.co/RcJgG4D/149-Photo-Room.jpg')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          height:'100vh'
-        }}
+        <div className='relative bg-violet-950'
+        // style={{
+        //   backgroundImage: "url('https://i.ibb.co/RcJgG4D/149-Photo-Room.jpg')",
+        //   backgroundSize: 'cover',
+        //   backgroundPosition: 'center',
+        //   height:'100vh'
+        // }}
       >
         
       
-           <div className="navbar ">
+           <div className="navbar  ">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost text-black lg:hidden">
@@ -99,7 +99,7 @@ const handleSignOut=()=>{
          
 </div>
         </div>
-<div className='absolute left-5 top-32 lg:left-20 lg:top-64'>
+{/* <div className='absolute left-5 top-32 lg:left-20 lg:top-64'>
   
 <div className='max-w-sm bg-blend-darken lg:max-w-xl  '>
                   <h2 className='text-2xl font-bold text-start text-white lg:text-5xl'>Mastering Tasks,<br></br> Empowering Success.</h2>
@@ -109,7 +109,7 @@ const handleSignOut=()=>{
               <button className="btn bg-fuchsia-500 border-none px-6 py-3 text-white hover:bg-white hover:text-fuchsia-500">{`Let's Explore`}</button>
             </Link>
         </div>
-</div>
+</div> */}
         </div>
     );
 };

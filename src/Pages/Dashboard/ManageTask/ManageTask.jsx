@@ -32,12 +32,18 @@ const ManageTask = () => {
         <h2 className="text-2xl font-bold text-fuchsia-500 text-center">To Do List</h2>
         <TaskCard tasks={addedTask} />
       </div>
-      <DropTarget onDrop={handleDropToOngoing}>
-        <h2 className="text-2xl font-bold text-fuchsia-500 text-center">Ongoing Task</h2>
+     <div>
+     <h2 className="text-2xl font-bold text-fuchsia-500 text-center">Ongoing Task</h2>
+     <DropTarget onDrop={handleDropToOngoing}>
+        
       </DropTarget>
-      <DropTarget onDrop={handleDropToCompleted}>
-        <h2 className="text-2xl font-bold text-fuchsia-500 text-center">Completed Task</h2>
+     </div>
+    <div>
+    <h2 className="text-2xl font-bold text-fuchsia-500 text-center">Completed Task</h2>
+    <DropTarget onDrop={handleDropToCompleted}>
+       
       </DropTarget>
+    </div>
     </div>
   );
 };

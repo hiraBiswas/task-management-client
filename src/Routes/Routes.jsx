@@ -14,6 +14,7 @@ import ManageTask from "../Pages/Dashboard/ManageTask/ManageTask";
 import Process from "../Pages/Process/Process";
 import Guideline from "../Pages/GuideLine/Guideline";
 import User from "../Pages/Home/User/User";
+import Profile from "../Pages/Profile/Profile";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -71,6 +72,11 @@ export const router = createBrowserRouter([
       {
         path: 'addTask',
         element: <AddTask></AddTask>
+      },
+
+      {
+        path: 'profile',
+        element: <Profile></Profile>
       },
      
     ]
